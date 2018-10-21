@@ -1,3 +1,5 @@
+# Git instructions
+
 To check the changes do
 git status
 
