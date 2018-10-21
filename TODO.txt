@@ -1,0 +1,6 @@
+1. Read data from excel.
+2. Measure accuracy of the model we are going to use.
+3. Find possible models and test their accuracy.
+4. Decide on the model and train it.
+5. Figure out ways to make API calls to Amazon to get a list of candidate books.
+6. Use model to predict the rating of the book.
