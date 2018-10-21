@@ -25,6 +25,6 @@ git pull
 You might need to resolve merge conflicts.
 
 For going back to an initial version of your repo:
-1) Delete the repo and do git pull
+1) Delete the local repo and do git clone agin
 or,
 2) git reset --hard HEAD
