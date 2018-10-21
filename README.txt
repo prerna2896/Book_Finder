@@ -15,10 +15,14 @@ git push
 
 If there is a conflict while pushing,
 it is probably because you have not
-pulled the lastest chnages on the repo.
+pulled the lastest changes on the repo.
 
 Try to do
 git pull
 
 You might need to resolve merge conflicts.
 
+For going back to an initial version of your repo:
+1) Delete the repo and do git pull
+or,
+2) git reset --hard HEAD
