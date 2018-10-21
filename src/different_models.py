@@ -1,11 +1,15 @@
 import data_extractor as de
 import cross_validation as cv
 from sklearn.tree import DecisionTreeClassifier as DTC
+import numpy as np
 
 data = de.read_data("../data/book_data.xlsx")
 
-features = data[:, ["author", "genre"]]
-labels = data["user_rating"]
+author_data = data["author"]
+genre_data = data["genre"]
+features = np.column_stack((author_data, genre_data))
+rating_data = data["user_rating"]
+labels = np.array(rating_data)
 
 print features
 print labels
