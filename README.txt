@@ -1,4 +1,4 @@
-To check the chnages do
+To check the changes do
 git status
 
 To add the files do
