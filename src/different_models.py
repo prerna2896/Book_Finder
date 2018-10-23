@@ -17,3 +17,7 @@ print "Decision Tree Classifier accuracy: \t", cross_val.leave_k_out_cross_valid
 # KNeighbors Classifier
 from sklearn.neighbors import KNeighborsClassifier as KNC
 print "KNeighbors Classifier accuracy: \t", cross_val.leave_k_out_cross_validation(1, KNC(), features, labels)
+
+# SVM
+from sklearn.svm import SVC
+print "SVM accuracy: \t", cross_val.leave_k_out_cross_validation(1, SVC(gamma='auto'), features, labels)
