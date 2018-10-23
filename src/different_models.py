@@ -1,8 +1,8 @@
-import data_extractor as data_ex
+import data_extractor as data_ext
 import cross_validation as cross_val
 import numpy as np
 
-data = data_ex.read_data("../data/book_data.xlsx")
+data = data_ext.read_data("../data/book_data.xlsx")
 
 author_data = data["author"]
 genre_data = data["genre"]
