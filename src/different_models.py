@@ -18,6 +18,6 @@ print features.shape
 print labels.shape
 
 # Decision Tree Classifier
-# decisionTree = DTC()
-# cv.leave_k_out_cross_validation(1, decisionTree, features, labels)
+decisionTree = DTC()
+cv.leave_k_out_cross_validation(1, decisionTree, features, labels)
 
