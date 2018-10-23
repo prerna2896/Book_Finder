@@ -1,8 +1,8 @@
-import data_extractor as de
-import cross_validation as cv
+import data_extractor as data_ex
+import cross_validation as cross_val
 import numpy as np
 
-data = de.read_data("../data/book_data.xlsx")
+data = data_ex.read_data("../data/book_data.xlsx")
 
 author_data = data["author"]
 genre_data = data["genre"]
@@ -12,10 +12,10 @@ labels = np.array(rating_data)
 
 # Decision Tree Classifier
 from sklearn.tree import DecisionTreeClassifier as DTC
-print "Decision Tree Classifier accuracy: \t", cv.leave_k_out_cross_validation(1, DTC(), features, labels)
+print "Decision Tree Classifier accuracy: \t", cross_val.leave_k_out_cross_validation(1, DTC(), features, labels)
 
 # KNeighbors Classifier
 from sklearn.neighbors import KNeighborsClassifier as KNC
-print "KNeighbors Classifier accuracy: \t", cv.leave_k_out_cross_validation(1, KNC(), features, labels)
+print "KNeighbors Classifier accuracy: \t", cross_val.leave_k_out_cross_validation(1, KNC(), features, labels)
 
 
